@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>571</width>
+    <height>564</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Optimization of Windows Programs</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="registration">
+       <attribute name="title">
+        <string>Регистрация </string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="2" column="0">
+         <widget class="QLabel" name="label">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>15</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Логин:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QPushButton" name="newuser">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Зарегистрировать новый аккаунт</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="QLabel" name="welcome">
+          <property name="text">
+           <string>●  С помощью этой утилиты вы сможете избавиться от ненужных стандартных приложений в ОС Windows
+    10 или 11.
+●  Будьте внимательны, ведь программа взаимодействует с вашей операционной системой.
+●  Введите логин и пароль. После входа в свой аккаунт вам станет доступен основной интерфейс
+    программы на соседней вкладке. </string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QPushButton" name="enter">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Войти в аккаунт</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="result">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>15</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0" colspan="2">
+         <widget class="QLineEdit" name="login"/>
+        </item>
+        <item row="5" column="0" colspan="2">
+         <widget class="QLineEdit" name="password"/>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>15</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Пароль:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="2">
+         <widget class="QPushButton" name="author">
+          <property name="text">
+           <string>Разработчик</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="main">
+       <attribute name="title">
+        <string>Удаление приложений</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="11" column="2">
+         <widget class="QCheckBox" name="voice">
+          <property name="text">
+           <string>Запись голоса</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttons</string>
+          </attribute>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QCheckBox" name="maps">
+          <property name="text">
+           <string>Карты</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttons</string>
+          </attribute>
+         </widget>
+        </item>
+        <item row="4" column="3">
+         <widget class="QCheckBox" name="screen">
+          <property name="text">
+           <string>Набросок фрагмента на экране</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttons</string>
+          </attribute>
+         </widget>
+        </item>
+        <item row="9" column="3">
+         <widget class="QCheckBox" name="tips">
+          <property name="text">
+           <string>Советы</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttons</string>
+          </attribute>
+         </widget>
+        </item>
+        <item row="7" column="3">
+         <widget class="QCheckBox" name="portal">
+          <property name="text">
+           <string>Портал смешанной реальности</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttons</string>
+          </attribute>
+         </widget>
+        </item>
+        <item row="8" column="2">
+         <widget class="QCheckBox" name="phone">
+          <property name="text">
+           <string>Ваш телефон</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttons</string>
+          </attribute>
+         </widget>
+        </item>
+        <item row="12" column="3">
+         <widget class="QCheckBox" name="photos">
+          <property name="text">
+           <string>Фотографии и Видеоредактор</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttons</string>
+          </attribute>
+         </widget>
+        </item>
+        <item row="12" column="2">
+         <widget class="QCheckBox" name="calendarmail">
+          <property name="text">
+           <string>Календарь и Почта</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttons</string>
+          </attribute>
+         </widget>
+        </item>
+        <item row="15" column="2">
+         <widget class="QPushButton" name="del_cur">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Удалить выбранные приложения</string>
+          </property>
+         </widget>
+        </item>
+        <item row="16" column="2" colspan="2">
+         <widget class="QPushButton" name="restore">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Восстановить все UWP приложения по умолчанию</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="3">
+         <widget class="QCheckBox" name="news">
+          <property name="text">
+           <string>Новости</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttons</string>
+          </attribute>
+         </widget>
+        </item>
+        <item row="3" column="3">
+         <widget class="QCheckBox" name="groove">
+          <property name="text">
+           <string>Музыка Groove</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttons</string>
+          </attribute>
+         </widget>
+        </item>
+        <item row="6" column="2">
+         <widget class="QCheckBox" name="xbox">
+          <property name="text">
+           <string>Сервисы Xbox</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttons</string>
+          </attribute>
+         </widget>
+        </item>
+        <item row="14" column="3">
+         <widget class="QCheckBox" name="yamusic">
+          <property name="text">
+           <string>Яндекс.Музыка</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttons</string>
+          </attribute>
+         </widget>
+        </item>
+        <item row="15" column="3">
+         <widget class="QPushButton" name="del_all">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Удалить ВСЕ UWP приложения</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QCheckBox" name="onenote">
+          <property name="text">
+           <string>OneNote</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttons</string>
+          </attribute>
+         </widget>
+        </item>
+        <item row="11" column="3">
+         <widget class="QCheckBox" name="support">
+          <property name="text">
+           <string>Техническая поддержка</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttons</string>
+          </attribute>
+         </widget>
+        </item>
+        <item row="13" column="2">
+         <widget class="QCheckBox" name="calc">
+          <property name="text">
+           <string>UWP Калькулятор</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttons</string>
+          </attribute>
+         </widget>
+        </item>
+        <item row="4" column="2">
+         <widget class="QCheckBox" name="paint">
+          <property name="text">
+           <string>Paint 3D</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttons</string>
+          </attribute>
+         </widget>
+        </item>
+        <item row="6" column="3">
+         <widget class="QCheckBox" name="weather">
+          <property name="text">
+           <string>Погода</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttons</string>
+          </attribute>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QCheckBox" name="cortana">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="text">
+           <string>Cortana</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttons</string>
+          </attribute>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QCheckBox" name="solitaire">
+          <property name="text">
+           <string>Microsoft Solitaire Collection</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttons</string>
+          </attribute>
+         </widget>
+        </item>
+        <item row="14" column="2">
+         <widget class="QCheckBox" name="cam">
+          <property name="text">
+           <string>Камера</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttons</string>
+          </attribute>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QCheckBox" name="Office">
+          <property name="text">
+           <string>UWP Microsoft Office</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttons</string>
+          </attribute>
+         </widget>
+        </item>
+        <item row="5" column="2">
+         <widget class="QCheckBox" name="skype">
+          <property name="text">
+           <string>Skype</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttons</string>
+          </attribute>
+         </widget>
+        </item>
+        <item row="13" column="3">
+         <widget class="QCheckBox" name="feedback">
+          <property name="text">
+           <string>Центр отзывов</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttons</string>
+          </attribute>
+         </widget>
+        </item>
+        <item row="7" column="2">
+         <widget class="QCheckBox" name="clock">
+          <property name="text">
+           <string>Будильники и часы</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttons</string>
+          </attribute>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QCheckBox" name="films">
+          <property name="text">
+           <string>Кино и ТВ</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttons</string>
+          </attribute>
+         </widget>
+        </item>
+        <item row="8" column="3">
+         <widget class="QCheckBox" name="bing">
+          <property name="text">
+           <string>Сервисы Bing</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttons</string>
+          </attribute>
+         </widget>
+        </item>
+        <item row="10" column="2">
+         <widget class="QCheckBox" name="pay">
+          <property name="text">
+           <string>Кошелёк Microsoft</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttons</string>
+          </attribute>
+         </widget>
+        </item>
+        <item row="9" column="2">
+         <widget class="QCheckBox" name="notes">
+          <property name="text">
+           <string>Записки (Sticky Notes)</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttons</string>
+          </attribute>
+         </widget>
+        </item>
+        <item row="10" column="3">
+         <widget class="QCheckBox" name="view3d">
+          <property name="text">
+           <string>Средство 3D-просмотра</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttons</string>
+          </attribute>
+         </widget>
+        </item>
+        <item row="2" column="3">
+         <widget class="QCheckBox" name="people">
+          <property name="text">
+           <string>Люди</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttons</string>
+          </attribute>
+         </widget>
+        </item>
+        <item row="17" column="2" colspan="2">
+         <widget class="QProgressBar" name="progress">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="value">
+           <number>0</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="buttons">
+   <property name="exclusive">
+    <bool>false</bool>
+   </property>
+  </buttongroup>
+ </buttongroups>
+</ui>
